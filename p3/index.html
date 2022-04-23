@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <meta name="viewport" content="width=800, initial-scale=1" />
+    <title>Beginning is also the end. End is also the beginning.</title>
+  </head>
+  <body>
+    <h1 class="beg">Beginning is also the end.</h1>
+    <h1 class="end">End is also the beginning.</h1>
+ 
+    <div id="newyork">
+      <a href="11am.png"><img src="img/11am.png" /></a>
+      <a href="12pm.png"><img src="img/12pm.png" /></a>
+      <a href="1pm.png"><img src="img/1pm.png" /></a>
+      <a href="2pm.png"><img src="img/2pm.png" /></a>
+      <a href="3pm.png"><img src="img/3pm.png" /></a>
+      <a href="4pm.png"><img src="img/4pm.png" /></a>
+      <a href="5pm.png"><img src="img/5pm.png" /></a>
+      <a href="6pm.png"><img src="img/6pm.png" /></a>
+      <a href="7pm.png"><img src="img/7pm.png" /></a>
+      <a href="8pm.png"><img src="img/8pm.png" /></a>
+      <a href="9pm.png"><img src="img/9pm.png" /></a>
+      <a href="10pm.png"><img src="img/10pm.png" /></a>
+      <a href="11pm.png"><img src="img/11pm.png" /></a>
+      <a href="12am.png"><img src="img/12am.png" /></a>
+    </div>
+    <div id="seoul">
+        <a href="s12a.png"><img src="img/s12a.png" alt="11am" /></a>
+        <a href="s11p.png"><img src="img/s11p.png" alt="11am" /></a>
+        <a href="s10.png"><img src="img/s10.png" alt="11am" /></a>
+        <a href="s9.png"><img src="img/s9.png"  /></a>
+        <a href="s8.png"><img src="img/s8.png"  /></a>
+        <a href="s7.png"><img src="img/s7.png"  /></a>
+        <a href="s6.png"><img src="img/s6.png"  /></a>
+        <a href="s5.png"><img src="img/s5.png"  /></a>
+        <a href="s4.png"><img src="img/s4.png"  /></a>
+        <a href="s3.png"><img src="img/s3.png"  /></a>
+        <a href="s2.png"><img src="img/s2.png"  /></a>
+        <a href="s1.png"><img src="img/s1.png"  /></a>
+        <a href="s12.png"><img src="img/s12.png"  /></a>
+        <a href="s11.png"><img src="img/s11.png"  /></a>
+    </div>
+
+
+    <script>
+      
+     window.addEventListener("DOMContentLoaded", function(e) {
+
+    // Original JavaScript code by Chirp Internet: chirpinternet.eu
+    // Please acknowledge use of this code by including this header.
+
+    var stage = document.getElementById("newyork");
+    var fadeComplete = function(e) { stage.appendChild(arr[0]); };
+    var arr = stage.getElementsByTagName("a");  
+    for (var i=0; i < arr.length; i++) {
+      arr[i].addEventListener("animationend", fadeComplete, false);
+      
+    }
+
+  }, false);
+    </script>
+    
+    <script>
+     window.addEventListener("DOMContentLoaded", function(e) {
+
+    // Original JavaScript code by Chirp Internet: chirpinternet.eu
+    // Please acknowledge use of this code by including this header.
+
+    var stage = document.getElementById("seoul");
+    var fadeComplete = function(e) { stage.appendChild(arr[0]); };
+    var arr = stage.getElementsByTagName("a");
+    for(var i=0; i < arr.length; i++) {
+      arr[i].addEventListener("animationend", fadeComplete, false);
+    }
+
+  }, false);
+    </script>
+  </body>
+</html>
